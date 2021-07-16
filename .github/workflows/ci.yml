@@ -55,7 +55,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Setup
-        run: npm i --legacy-peer-deps
+        run: npm i -g npm-install-peers
       - name: Build
         run: npm run build --if-present
       - name: Upload build
